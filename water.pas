@@ -101,12 +101,47 @@ type
     function emptyVials: integer;
   end;
 
+{
+  0077FF ORANGE
+  000066 DKRED
+  E16941 ROYAL
+  51B5F8 SANDY
+  56719C LTBROWN
+  690D9F MYMAROON
+  6C37E5 PNKRED
+  5252D9 LTRED 
+  33FF99 LIME 
+  80FF00 BGREEN 
+}
+{
+    TColor($5252D9)      LTRED
+    clBlue               BLUE
+    TColor($000066)      DKRED
+    clGreen              DKGREEN
+    clOlive              OLIVE
+    TColor($33FF99)      LIME
+    TColor($E16941)      ROYAL
+    TColor($0077FF)      ORANGE
+    clYellow             YELLOW
+    clPurple             PURPLE
+    TColor($690D9F)      MAROON
+    clFuchsia            MAGENTA
+    TColor($51B5F8)      SANDY
+    clRed                RED
+    clAqua               CYAN
+    clGray               GREY
+    TColor($56719C)      BROWN
+    TColor($80FF00)      BGREEN?
+}
 
 
 const
-  cols: array of TColor = (clWhite, clBlue, clRed, clLime, clYellow, clFuchsia, clAqua,
-    clGray, TColor($8c5eeb), clOlive, TColor($2d6cc1), TColor($7aacff), TColor($1a6201),
-    TColor($FF8C00), clBlack);
+  cols: array of TColor = (
+    clWhite,
+    TColor($5252D9),  clBlue,           TColor($000066),  clGreen,  clOlive,          TColor($33FF99),
+    TColor($E16941),  TColor($0077FF),  clYellow,         clPurple, TColor($690D9F),  clFuchsia,
+    TColor($51B5F8),  clRed,            clAqua,           clGray,   TColor($56719C),  TColor($80FF00),
+    clBlack);
   XOFF = 10;
   YOFF = 20;
   APPNAME = 'ColorSortOptimalSolver';

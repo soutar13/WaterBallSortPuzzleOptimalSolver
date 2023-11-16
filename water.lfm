@@ -62,7 +62,7 @@ object Form1: TForm1
     Top = 585
     Width = 37
     Anchors = [akLeft, akBottom]
-    MaxValue = 14
+    MaxValue = 18
     MinValue = 2
     OnChange = NColorsSpinChange
     TabOrder = 2
